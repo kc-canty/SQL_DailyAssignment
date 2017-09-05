@@ -19,6 +19,6 @@ INSERT INTO todos (title, details, priority, created_at) VALUES ('Bake cheesecak
 SELECT title FROM todos WHERE completed_at IS NULL;
 SELECT title FROM todos WHERE priority > 1;
 
-UPDATE todos SET details = 'bake at 320 degrees' WHERE id = 5;
+UPDATE todos SET completed_at ='now' WHERE details = 'Crack 3 eggs';
 
-DELETE FROM todos WHERE completed_at != NULL;
+DELETE FROM todos WHERE completed_at IS NOT NULL;
